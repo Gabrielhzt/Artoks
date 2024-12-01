@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+	background-color: 0 0% 100%;
 	line-height: 1.5;
 	font-weight: 400;
 	font-synthesis: none;
@@ -15,8 +16,6 @@
 	font-variation-settings: 'slnt' 0;
 }
 
-@layer base {
-	body {
-		@apply bg-zinc-950 text-neutral-200;
-	}
+.dark {
+	background-color: rgba(32, 34, 37, 1);
 }
