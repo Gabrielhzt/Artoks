@@ -11,8 +11,8 @@ export function ModeToggle() {
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white dark:bg-transparent px-2 py-2 text-sm font-semibold text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-neutral-700 hover:bg-gray-50">
-                    <Sun className="h-[1.1rem] w-[1.1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                    <Moon className="absolute h-[1.0rem] w-[1.0rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                    <Sun strokeWidth={2.3} className="h-[1.1rem] w-[1.1rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                    <Moon strokeWidth={2.3} className="absolute h-[1.0rem] w-[1.0rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
                     <span className="sr-only">Toggle theme</span>
                 </MenuButton>
             </div>

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThirdwebProvider } from "thirdweb/react";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/modeToogle";
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "thirdweb SDK + Next starter",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -28,9 +28,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
           <ThirdwebProvider>
-            <div className="flex flex-row-reverse">
-              <ModeToggle />
-            </div>
+            <Navbar />
             {children}
           </ThirdwebProvider>
         </ThemeProvider>
